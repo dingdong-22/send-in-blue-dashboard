@@ -34,9 +34,9 @@ button:hover {
 
 @media (max-width: 420px) {
   .navbar {
-    height: 10vh;
+    height: 14vh;
     display: grid;
-    grid-template-rows: 5vh 5vh;
+    grid-template-rows: 7vh 7vh;
   }
 }
 
