@@ -9,9 +9,7 @@ function App() {
       <Navbar />
       <div className="remaining_container">
         <VerticalNavBar />
-        <div className="main_section_container">
-          <MainSection />
-        </div>
+        <MainSection />
       </div>
     </div>
   );
