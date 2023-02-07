@@ -2,7 +2,7 @@ function Introduction() {
   return (
     <div className="introduction">
       <div className="outside_table">
-        <p>Get started with Marketing</p>
+        <p className="get_started">Get started with Marketing</p>
         <p className="skip_onboarding">Skip onboarding</p>
       </div>
       <div className="introduction_steps">
