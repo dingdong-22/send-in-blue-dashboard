@@ -11,7 +11,10 @@ function Information() {
       </div>
       <div className="information_blocks">
         <div>
-          <p className="information_type">Opens</p>
+          <div className="make_it_inline">
+            <p className="information_type">Opens</p>
+            <p className="i_symbol">ⓘ</p>
+          </div>
           <div className="progress">
             <p className="count">0</p>
             <p className="percentage">0%</p>
