@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+:root {
+  --clr-main-bg: rgb(255, 255, 255);
+  --clr-navbar-bg: rgb(4, 74, 117);
+  --clr-vertical-navbar-bg: rgb(249, 250, 252);
+  --clr-button1: rgb(0, 113, 199);
+  --clr-skip-onboarding: rgb(24, 133, 208);
+  --clr-emails-text-view: rgb(0, 113, 201);
+  --clr-border-gray: rgb(192, 204, 218);
+  --clr-completed-step-bg: rgb(249, 250, 252);
+  --clr-navbar-current: rgb(255, 210, 1);
+
+  --clr-text-white: white;
+  --clr-text-black: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--clr-main-bg);
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* navbar */
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  height: 30px;
+  justify-content: space-between;
   align-items: center;
+  background-color: var(--clr-navbar-bg);
+}
+
+.navbar_left,
+.navbar_right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.company_logo {
+  height: 20px;
+  margin: 0px 10px 0px 10px;
+}
+
+.nav_buttons {
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  color: var(--clr-text-white);
+  font-size: 0.6rem;
+  font-weight: 550;
+}
+
+.remaining_container {
+  display: grid;
+  grid-template-columns: 11% 89%;
+  height: 100vh;
+}
+
+.navbar .current {
+  border-bottom: 2px solid var(--clr-navbar-current);
+}
+/* vertical nav bar */
+
+.vertical_navbar {
+  background-color: var(--clr-vertical-navbar-bg);
+}
+
+.vertical_navbar_buttons {
+  display: flex;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  font-size: 0.7rem;
+  margin: 14px 0px 14px 4px;
+}
+
+.emails_section {
+  margin: 40px 0px 0px 12px;
+}
+
+.emails_header {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.emails_text_info {
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+.emails_text_view {
+  margin: 0;
+  font-size: 0.6rem;
+  text-decoration: underline;
+  color: var(--clr-emails-text-view);
+}
+
+/* main section */
+
+.main_section_container {
+  display: grid;
+  padding-top: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main_section {
+  display: grid;
+  width: 63vw;
+  grid-template-rows: 20px 225px 60px;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard_header {
+  margin: 0;
+}
+
+.create_a_campaign_button {
+  color: var(--clr-text-white);
+  background-color: var(--clr-button1);
+  border: none;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  height: 25px;
+  font-weight: 550;
+}
+
+.outside_table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 550;
+}
+
+.skip_onboarding {
+  font-size: 0.6rem;
+  color: var(--clr-skip-onboarding);
+}
+
+/* Introduction */
+
+.introduction {
+}
+
+.introduction_steps {
+  display: grid;
+  border-radius: 5px;
+  border: 1px solid var(--clr-border-gray);
+  height: fit-content;
+  margin-bottom: 33px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--clr-border-gray);
+  font-size: 0.6rem;
+  padding: 10px;
+}
+
+.step p {
+  margin: 2px;
+}
+
+.step.completed {
+  text-decoration: line-through;
+  background-color: var(--clr-completed-step-bg);
+}
+
+.step.completed p {
+  color: gray;
+}
+
+.step_extra_info {
+  font-size: 0.5rem;
+}
+
+.completed_icon,
+.incomplete_icon {
+  height: 12px;
+  margin-right: 6px;
+}
+
+/* information */
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 50px;
+}
+
+.information_blocks {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--clr-border-gray);
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 0.6rem;
+}
+
+.information_type {
+  margin: 0;
+}
+
+.information_arrow {
+  background-color: inherit;
+  border: none;
+}
+
+.count {
+  font-size: 1rem;
+  margin: 10px 0px 0px 0px;
 }
