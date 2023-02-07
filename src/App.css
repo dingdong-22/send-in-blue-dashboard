@@ -195,21 +195,23 @@ button:hover {
 
 .information {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
 
 .information_blocks {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid var(--clr-border-gray);
   border-radius: 5px;
-  padding: 12px;
+  padding: 7px 10px 7px 10px;
   font-size: 0.6rem;
 }
 
 .information_type {
-  margin: 0;
+  margin: 0px 0px 8px 0px;
+  color: gray;
 }
 
 .information_arrow {
@@ -217,7 +219,25 @@ button:hover {
   border: none;
 }
 
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .count {
   font-size: 1rem;
-  margin: 10px 0px 0px 0px;
+  margin: 0;
+}
+
+.percentage {
+  display: flex;
+  background-color: rgb(239, 242, 247);
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  border-radius: 10px;
+  font-size: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 6px;
 }
