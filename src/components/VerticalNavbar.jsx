@@ -10,7 +10,7 @@ function VerticalNavBar() {
       <div className="emails_section">
         <p className="emails_header">Emails</p>
         <p className="emails_text_info">300 emails</p>
-        <p className="emails_text_view">View Details</p>
+        <p className="emails_text_view">View details</p>
       </div>
     </div>
   );
