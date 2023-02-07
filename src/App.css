@@ -182,6 +182,7 @@ button:hover {
 
 .step_extra_info {
   font-size: 0.5rem;
+  color: rgb(103, 103, 103);
 }
 
 .completed_icon,
