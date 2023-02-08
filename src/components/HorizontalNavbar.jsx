@@ -1,7 +1,7 @@
-function Navbar() {
+function HorizontalNavBar() {
   return (
-    <div className="navbar">
-      <div className="navbar_left">
+    <div className="horizontal_navbar">
+      <div className="horizontal_navbar_left">
         <img
           className="company_logo"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/g0wipqhbt9udqeb1rdcb"
@@ -13,7 +13,7 @@ function Navbar() {
         <button className="nav_buttons">Contacts</button>
         <button className="nav_buttons">Add more apps</button>
       </div>
-      <div className="navbar_right">
+      <div className="horizontal_navbar_right">
         <button className="nav_buttons">Bell</button>
         <button className="nav_buttons">Help</button>
         <button className="nav_buttons">Drop Down</button>
@@ -22,4 +22,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default HorizontalNavBar;

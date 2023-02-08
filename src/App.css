@@ -1,13 +1,13 @@
 :root {
   --clr-main-bg: rgb(255, 255, 255);
-  --clr-navbar-bg: rgb(4, 74, 117);
+  --clr-horizontal-navbar-bg: rgb(4, 74, 117);
   --clr-vertical-navbar-bg: rgb(249, 250, 252);
   --clr-button1: rgb(0, 113, 199);
   --clr-skip-onboarding: rgb(24, 133, 208);
   --clr-emails-text-view: rgb(0, 113, 201);
   --clr-border-gray: rgb(192, 204, 218);
   --clr-completed-step-bg: rgb(249, 250, 252);
-  --clr-navbar-current: rgb(255, 210, 1);
+  --clr-horizontal-navbar-current: rgb(255, 210, 1);
 
   --clr-text-white: white;
   --clr-text-black: black;
@@ -22,26 +22,26 @@ button:hover {
   cursor: pointer;
 }
 
-/* navbar */
+/* horizontal navbarbar */
 
-.navbar {
+.horizontal_navbar {
   display: flex;
   height: 5vh;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-navbar-bg);
+  background-color: var(--clr-horizontal-navbar-bg);
 }
 
 @media (max-width: 420px) {
-  .navbar {
+  .horizontal_navbar {
     height: 14vh;
     display: grid;
     grid-template-rows: 7vh 7vh;
   }
 }
 
-.navbar_left,
-.navbar_right {
+.horizontal_navbar_left,
+.horizontal_navbar_right {
   display: flex;
   align-items: center;
   height: 100%;
@@ -67,8 +67,8 @@ button:hover {
   height: 100vh;
 }
 
-.navbar .current {
-  border-bottom: 2px solid var(--clr-navbar-current);
+.horizontal_navbar .current {
+  border-bottom: 2px solid var(--clr-horizontal-navbar-current);
 }
 
 /* vertical nav bar */

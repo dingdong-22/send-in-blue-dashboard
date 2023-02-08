@@ -1,12 +1,12 @@
 import "./App.css";
 import MainSection from "./components/MainSection";
-import Navbar from "./components/Navbar";
+import HorizontalNavbar from "./components/HorizontalNavbar";
 import VerticalNavBar from "./components/VerticalNavbar";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <HorizontalNavbar />
       <div className="remaining_container">
         <VerticalNavBar />
         <MainSection />
