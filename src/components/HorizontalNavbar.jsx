@@ -1,12 +1,10 @@
+import logo from "../images/company_logo.png";
+
 function HorizontalNavBar() {
   return (
     <div className="horizontal_navbar">
       <div className="horizontal_navbar_left">
-        <img
-          className="company_logo"
-          src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/g0wipqhbt9udqeb1rdcb"
-          alt=""
-        />
+        <img className="company_logo" src={logo} alt="company_logo" />
         <button className="nav_buttons current">Campaigns</button>
         <button className="nav_buttons">Automation</button>
         <button className="nav_buttons">Transactional</button>
